@@ -12,8 +12,8 @@
  *    suffix: the text following the countdown
  *    onChange: callback to be called on change
  *    - passed: charCountdown element
- *          input element
- *          characters left
+ *          	input element
+ *          	# of characters left
  */
 
 ;(function ( $, window, document, undefined ) {
