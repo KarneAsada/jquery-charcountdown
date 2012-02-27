@@ -1,7 +1,7 @@
 /*
- *  Char Count 
+ *  jQuery Char Countdown
  *  Creates a Twitter-like counter on an input
- *  Author: Dan Karney 
+ *  Author: Dan Karney @KarneAsada
  *  Date: 2012-02-24
  *
  *  Options:
@@ -13,7 +13,7 @@
  *    onChange: callback to be called on change
  *    - passed: charCountdown element
  *          input element
- *          char count
+ *          characters left
  */
 
 ;(function ( $, window, document, undefined ) {
@@ -23,7 +23,7 @@
     , defaults = {
           position:   "after"
         , limit:      100
-        , enforce:    true
+        , enforce:    false
         , className:  "jqCharCountdown"
         , suffix:     "chars left"
         , onChange:   null
@@ -88,8 +88,8 @@
         counter.css("color", "rgb(" + rgb.join(",") + ")");
         
         // Change background color of input
-        var bgRbg = hslToRgb( limitPercentage * 120 / 360, 1, 0.9 );
-        el.css("background-color", "rgb(" + bgRbg.join(",") + ")");
+        // var bgRbg = hslToRgb( limitPercentage * 120 / 360, 1, 0.9 );
+        // el.css("background-color", "rgb(" + bgRbg.join(",") + ")");
       }
     });
     
